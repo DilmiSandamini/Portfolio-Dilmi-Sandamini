@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 60px;
+
+    transition: 0.5s ease;
+} 
+
+#logo-container:hover{
+    color:white;
+    text-shadow: 0 0 25px red,
+                 0 0 50px red;
+    transform: scale(1.4); 
+}
+
+#ds{
+    color: #ffffff;
+}
+
+#jk{
+    color: #FF122A;
+}
+
+header{
+    background-color: #151418;
+    height: 5vh;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+nav > ul > li {
+    margin: 0 40px;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.content-animation-01:before{
+    content: " ";
+    position: absolute;
+    bottom: 15px;
+    height: 3px;
+    width: 50px;
+    background-color: #FF122A;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+.content-animation-01:hover:before{
+    transform: scaleX(1);
+}
+
+.content-animation-02:before{
+    content: " ";
+    position: absolute;
+    bottom: 15px;
+    height: 3px;
+    width: 63px;
+    background-color: #FF122A;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+.content-animation-02:hover:before{
+    transform: scaleX(1);
+}
+
+.menu-panel{
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    padding-top: 70px;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+}
+
+.menu-panel ul li{
+    
+    list-style: none;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-panel ul li a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+
+}
+
+#burger {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid white;
+    top: 10px;
+    right: 20px;
+  }
+
+
+@media screen and (min-width: 1024px) and
+ (max-width: 1440px){
+    nav > ul > li {
+        margin: 0 30px;
+    }
+
+    header{
+        padding: 20px;
+        z-index: 1;
+        width: 100%;
+    }
+} 
+
+@media screen and (min-width: 768px) and
+ (max-width: 1023px){
+    .menu-panel.active {
+        right: 0;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    .navigation-sections {
+        display: none;
+    }
+
+    .header{
+        justify-content: space-around;
+    }
+ }
+

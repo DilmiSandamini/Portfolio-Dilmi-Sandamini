@@ -1,0 +1,124 @@
+#home{
+    display: flex;
+    justify-content: space-around;
+    background-color:  #151418;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+#hero-content{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 36%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 24px;
+    margin-top: 90px;
+}
+
+#hero-image{
+    z-index: 0;
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin-top: 130px;
+    margin-left:-450px;
+
+    transition: 0.5s ease;
+}
+
+#hero-image:hover{
+    color:rgb(170, 42, 42);
+    box-shadow : 0 0 25px rgb(170, 42, 42),
+                 0 0 25px rgb(170, 42, 42);
+    transform: scale(1.2); 
+}
+
+#paragraph-1{
+    height:100px ;
+    font-size:1rem ;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: justify;
+}
+.name{
+    color:#FF122A ;
+}
+
+#home-title{
+    font-size: 3rem;
+}
+
+#social-media{
+    margin-left:-30px;
+    display: flex;
+    gap: 30px;
+}
+
+.icons{
+    width: 30px;
+    height: 30px; 
+    object-fit: cover;
+    border-radius: 50%;
+
+    transition: 0.5s ease;
+}
+
+.icons:hover{
+    color:#FF122A;
+    box-shadow : 0 0 25px #FF122A,
+                 0 0 50px #FF122A;
+    transform: scale(1.2); 
+}
+.icons-f{
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.icons-f:hover{
+    color:#FF122A;
+    box-shadow : 0 0 25px #FF122A,
+                 0 0 50px #FF122A;
+    transform: scale(1.5); 
+}
+
+#paragraph-2{
+    margin-bottom: -45px;
+}
+
+#title-animation{
+    color: #FF122A;
+}
+
+@media screen and (min-width: 1024px) and
+ (max-width: 1440px){
+    #home{
+        display: flex;
+        justify-content: space-around;
+    }
+    #hero-content{
+        margin-left: -130px;
+        margin-top: 60px;
+        width: 50%;
+    }
+
+    #hero-image{
+        width: 250px;
+        height: 400px;
+        margin-left: -400px;
+        margin-top: 90px;
+    }
+
+    #home-title{
+        font-size: 2rem;
+    }
+
+    #paragraph-1{
+        width:450px ;
+        height:100px ;
+    }
+}  

@@ -1,0 +1,92 @@
+#title-name{
+    display: flex;
+    padding-left: 80px;
+}
+
+#title-detail{
+    display: flex;
+    margin-top: 0;
+    margin-left: 80px;
+}
+.name{
+    padding-left: 10px;
+}
+.service{
+    padding-top: 85px;
+    background-color: #1E1E1E;
+    padding-bottom: 260px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.service-card{
+    background-color: #151418;
+    border: 2px solid  #151418;
+    border-radius: 20px;
+    
+    transition: 0.5s ease;
+}
+
+.service-card:hover{
+    color:white;
+    box-shadow : 0 0 15px rgb(94, 33, 33),
+                 0 0 15px rgb(94, 33, 33);
+    transform: scale(1.1); 
+}
+
+.service-card-head img{
+    width: 40px;
+    height: 40px;
+}
+
+.service-card-head{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.service-card-title{
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+
+.service-card-details{
+    font-size: 1rem;
+    padding: 20px;
+    align-items:center;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.service-container{
+    width: 280px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 80px;
+    width: 80%;
+    padding-top: 100px;
+}
+
+.services{
+    display: flex;
+    justify-content:space-around;
+}
+
+@media screen and (min-width: 1024px) and
+ (max-width: 1440px){
+    .service-container{
+        width: 90%;
+        column-gap: 70px;
+    }
+
+    .service-card-details{
+        font-size: 0.9rem; 
+    }
+
+    .service-card-title{
+        font-size: 1rem;
+    }
+    
+ }

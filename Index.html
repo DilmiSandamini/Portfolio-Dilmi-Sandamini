@@ -4,320 +4,302 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Dilmi Sandamini</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/service.css">
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
     <!-------- Header --------> 
 
-    <header id="header" class="header">
-        <nav>
-            <div>
-                <br>
-                <img src="/Assests/logos/Name Logo.jpg"
-                     alt="Portfolio-Dilmi Logo"
-                     style="width: 100px; height: 30; object-fit: cover;">
-            </div>
-            <div id="nav-menu" class="nav-menu">
-                <ul class="nav-list">
-                    <a href="#home">HOME</a>
-                    <a href="#about">ABOUT</a>
-                    <a href="#resume">RESUME</a>
-                    <a href="#service">SERVICE</a>
-                    <a href="#project">PROJECT</a>
-                    <a href="#contact">CONTACT</a>
-
-                </ul>
-            </div>
+    <header>
+        <div id="logo-container">
+            <h2>DS<span id="jk">JK</span>
+            </h2> 
+        </div>
+        <nav class="navigation-sections">
+            <ul>
+                <li><a id="content" class="content-animation-01" href="#home">HOME</a></li>
+                <li><a id="content" class="content-animation-01" href="#about">ABOUT</a></li>
+                <li><a id="content" class="content-animation-01" href="#skills">SKILLS</a></li>
+                <li><a id="content" class="content-animation-02" href="#service">SERVICE</a></li>
+                <li><a id="content" class="content-animation-02" href="#project">PROJECT</a></li>
+                <li><a id="content" class="content-animation-02" href="#contact">CONTACT</a></li> 
+            </ul>
         </nav>
+        <img id="burger" aria-hidden="true" src="/Assests/icons/burger-bar.png" alt="menu icon">
+        <nav class="menu-panel" id="menu-panel-id">
+          <button class="close-btn" id="btn-close">&times;</button>
+          <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#service">SERVICE</a></li>
+                <li><a href="#project">PROJECT</a></li>
+                <li><a href="#contact">CONTACT</a></li> 
+          </ul>
+        </nav>
+        <script src="/js/header.js"></script>
     </header>
-
     <!-------- Main -------->
     <main>
-    <!-------- HOME --------> 
-        <section id="home" class="home">
-            <div>
-                <br>
-                <img src="/Assests/images/My Photo.jpg"
-                     alt="Portfolio-Dilmi Image"
-                     style="width: 100px; height: 150px; object-fit: cover;">
-                <div>
-                    <p>
-                        Welcome to my world
-                    </p>
-                        <h1>
-                            Hi, I’m Dilmi Sandamini
-                            <br>
-                            a  Fullstack Developer.
-                        </h1>
-                    <p>
-                        Passionate about creating intuitive and engaging user experiences.Professional development involves enhancing soft skills like time management, problem-solving, and communication.
-                    </p>
-                    <br>
-                        <strong>Find with me</strong>
-                </div>        
-                <div>
-                    <br>
-                    <a href="https://github.com/" target="_blank"><img src="/Assests/icons/github.png" 
-                        alt="Github Icon"
-                        style="width: 20px; height: 20px; object-fit: cover;"></a>
-                    
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="/Assests/icons/linkedin.png"
-                        alt="linkedin Icon"
-                        style="width: 20px; height: 20px; object-fit: cover;"></a>
-                    
-                    <a href="https://www.instagram.com/" target="_blank"><img src="/Assests/icons/Instagram.png"
-                        alt="Instagram Icon"
-                        style="width: 20px; height: 20px; object-fit: cover;"></a>
-                    
-                    <a href="https://web.facebook.com" target="_blank"><img src="/Assests/icons/facebook.png"
-                        alt="Facebook Icon"
-                        style="width: 20px; height: 20px; object-fit: cover;"></a>
-                </div>
+    <!-------- HOME -------->
+    <section id="home" class="home">
+        <div id="hero-content">
+            <div id="paragraph-2">
+                <p >
+                    Welcome to my world
+                </p>
             </div>
-        </section>
+             
+            <h1 id="home-title">
+                Hi, I’m Dilmi Sandamini, 
+                <br>
+                a <span id="title-animation">Fullstack Developer</span>
+
+            </h1>
+            <div id="paragraph-1">
+                <p>
+                    Passionate about creating intuitive and engaging user experiences.Professional development involves enhancing soft skills like time management, problem-solving, and communication.
+                </p>
+            </div>
+            
+            <p class="paragraph-3">Find with me</p>
+            
+            <div id="social-media">
+                <br>
+                <a class="icons" href="https://github.com/" target="_blank"><img src="/Assests/icons/github (1).png" 
+                    alt="Github Icon"></a>
+                
+                <a class="icons" href="https://www.linkedin.com/" target="_blank"><img src="/Assests/icons/linkedin (1).png"
+                    alt="linkedin Icon"></a>
+                
+                <a class="icons" href="https://www.instagram.com/" target="_blank"><img src="/Assests/icons/instagram (1).png"
+                    alt="Instagram Icon"></a>
+                
+                <a class="icons-f" href="https://web.facebook.com" target="_blank"><img src="/Assests/icons/facebook (1).png"
+                    alt="Facebook Icon"></a>
+            </div>
+        </div>
+        <img id="hero-image" src="/Assests/images/My Photo.jpg" alt="Portfolio-Dilmi Image">
+    </section>    
 
     <!-------- ABOUT --------> 
-        <br>
+
         <section id="about" class="about">
-            <div>
-                <h1>About me</h1>
-                    <img src="/Assests/images/My Photo.jpg"
-                         alt="Portfolio-Dilmi Image"
-                         style="width: 200px; height: 300px; object-fit: cover;">
-                <p>
-                    Hey,I am Dilmi Sandamini and I'm 22 years old.I am currently studying to become an IT Professional in Software Engineering Institute. I hope to work as a fullstack developer in the near future. I am currently studying web developing, mobile developing and I am interested in coding, music,traveling fitness and photography. 
-                </p>
-                <h4>
-                    <u>
-                        Main Skills
-                    </u>
-                </h4>
-                <p>
-                    <ul>
-                        Web and User Interface Design - Development
-                        Web Sites, Web experience
+                <div class="about-image">
+                    <img src="/Assests/images/My Photo.jpg" alt="Portfolio-Dilmi Image"> 
+                </div>
+                    <div class="about-content">
+                        <h1 id="title-about">About<span class="name">Me</span></h1>
+                        <p>
+                            Hey,I am Dilmi Sandamini and I'm 22 years old.I am currently studying to become an IT Professional in Software Engineering Institute. I hope to work as a fullstack developer in the near future. I am currently studying web developing, mobile developing and I am interested in coding, music,traveling fitness and photography. 
+                        </p>
                         <br>
-                        Software - Development
-                        Front-end, back-end, Data Handling
-                    </ul>
-                </p>
-                <h4>
-                    <u>
-                        Education & Certification
-                    </u>
-                </h4>
-                <p>
-                    <ul>
-                        Certificate Course in Java, HTML & Mysql 
+                    <div class="education">
+                        <p>Education & Certification</p>
+                        <hr class="line">
                         <br>
-                        Diploma in Computer Science(2024)
-                    </ul>
-                </p>
-                <br>
-            </div>
+                        <p>Completed Ordinary Level(OL) & Advanced 
+                        Level (AL) Examination in Maths scheme - MR/ Narandeniya National School 
+                        </p>
+                        <br>
+                        <p>Studying Graduate Diploma in Software Engineering(GDSE) - Institute Of Software Engineering (IJSE)</p>
+                        
+                    </div>
+                </div>
         </section>
 
-    <!-------- RESUME --------> 
-        <section id="resume" class="resume">
-            <div>
-                <h1>My Resume</h1>
-                    <P>Learn more about my professional experience and my qualifications
-                    </P>
-                <div>
-                    <img src="/Assests/logos/School.png"
-                         alt="School Badge"
-                         style="width: 100px; height: 100px; object-fit: cover;">   
-                
-                    <p>
-                        MR/ Narandeniya National School
-                        <br>     
-                        Completed Ordinary Level(OL) & Advanced 
-                        Level (AL) Examination in Maths scheme
-                    </p>
+    <!-------- skills --------> 
+        <section id="skills" class="skills">
+            <h1 ><span class="name">My</span> Skills</h1>
+            <P id="skills-details">Learn more about my professional experience and my qualifications</P>
+            <div class="skills-container">
+                <div class="icon-card">
+                    <img class="card-icon" src="/Assests/icons/java.png" alt="java image">
+                    <p class="card-icon-name">JAVA</p>
                 </div>
-                <div>
-                    <img src="/Assests/logos/ijse.png"
-                        alt="IJSE Badge"
-                        style="width: 150px; height: 40px; object-fit: cover;"> 
-                    
-                    <p>
-                        Institute Of Software Engineering
-                        <br>
-                        Studying Graduate Diploma in Software Engineering(GDSE)
-                    </p>
-                </div> 
-                <br>   
+                <div class="icon-card">
+                    <img class="card-icon" src="/Assests/icons/html.png" alt="html image">
+                    <p class="card-icon-name">HTML</p> 
+                </div>
+                <div class="icon-card">
+                    <img class="card-icon" src="/Assests/icons/css-3.png" alt="css image">
+                    <p class="card-icon-name">CSS</p> 
+                </div>
+                <div class="icon-card">
+                    <img class="card-icon" src="/Assests/icons/js.png" alt="javascript image">
+                    <p class="card-icon-name">JAVA SCRIPT</p>
+                </div>
+                <div class="icon-card">
+                    <img class="card-icon" src="/Assests/icons/science.png" alt="react JS image">
+                    <p class="card-icon-name">REACT JS</p>
+                </div>
+                <div class="icon-card">
+                    <img class="card-icon" src="/Assests/icons/python.png" alt="python image">
+                    <p class="card-icon-name">PYTHON</p>
+                </div>
+                <div class="icon-card">
+                    <img class="card-icon" src="/Assests/icons/word (1).png" alt="tallwind css image">
+                    <p class="card-icon-name">TALLWIND CSS</p>
+                </div>
+                <div class="icon-card">
+                    <img class="card-icon" src="/Assests/icons/icons8-nodejs-144.png" alt="node JS image">
+                    <p class="card-icon-name">NODE JS</p> 
+                </div>
             </div>
         </section>
 
     <!-------- SERVICE --------> 
         <section id="service" class="service">
-            <div>
-                <h1>What I Do ...</h1>
-                    <p>
+            <h1 id="title-name">What I <span class="name"> Do ...</span></h1>
+                    <p id="title-detail">
                     The Service in the Portfolio is the core repository for all information. Each service is listed along with its current status and history. 
                     </p>
-                <div>
-                    <ul>
-                        <img src="/Assests/icons/Call Me.png"
-                                alt="Call Icon"
-                                style="width: 30px; width: 30px;">
-                        <h4>Mobile Application</h4>
-                        <p>
+                <div class="services">
+                    <div class="service-container">
+                        <div class="service-card">
+                            <div class="service-card-head">
+                            <img src="/Assests/icons/check (1).png"
+                                 alt="Call Icon">
+                            <h4 class="service-card-title">Mobile Application</h4>
+                        </div>
+                        <p class="service-card-details">
                             Mobile app development involves designing, coding, and deploying software for mobile devices. It focuses on creating user-friendly, reliable solutions tailored to meet specific audience needs.
-                        </p>
-                        <img src="/Assests/icons/Internet.png"
-                                alt="Internet Icon"
-                                style="width: 30px; width: 30px;">
-                        <h4>Website Design</h4>
-                        <p>
+                        </p> 
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-card-head">
+                            <img src="/Assests/icons/web.png"
+                                 alt="Internet Icon">
+                            <h4 class="service-card-title">Website Design</h4>
+                        </div>
+                        <p class="service-card-details">
                             Website design involves crafting user-friendly interfaces and ensuring compatibility across devices and browsers. The goal is to create an appealing and functional site that effectively communicates its message. 
                         </p>
-                        <img src="/Assests/icons/Website Design.png"
-                                alt="Website Icon"
-                                style="width: 30px; width: 30px;">
-                        <h4>Stand Alone Application</h4>
-                        <p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-card-head">
+                            <img src="/Assests/icons/laptop.png"
+                                 alt="Website Icon">
+                            <h4 class="service-card-title">Stand Alone Application</h4>
+                        </div>
+                        <p class="service-card-details">
                             Stand-alone application development focuses on creating independent software that runs without needing a network connection. The goal is to deliver reliable, efficient, and user-friendly solutions tailored to specific tasks.  
                         </p>
-                    </ul>
-                </div>    
-                <br>
-            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
     <!-------- PROJECT --------> 
         <section id="project" class="project">
-            <div>
-                    <h1>My Projects</h1>
-                    <p>
-                        Projects involves the process of planning, organizing, and executing a set of tasks to achieve a specific goal or objective  
-                    </p>
-                <div>
-                    <ul>
-                        <h4>Java Projects</h4>
-                        <img src="/Assests/images/Stock Management.png" 
-                            alt="Stock Management Project"
-                            style="width: 100px; height: 100px; object-fit: cover;">
-                        <p>
-                                Stock Management System(Terminal)
-                        </p>
-                        <br>
-                        <img src="/Assests/images/Tic-Tac-Toe.png" 
-                            alt="Game Project"
-                            style="width: 100px; height: 100px; object-fit: cover;"> 
-                        <p>
-                            Tic-Tac-Toe Game
-                        </p> 
-                        <br>
-                        <img src="/Assests/images/Style ClothShop.png" 
-                            alt="Style ClothShop Project"
-                            style="width: 100px; height: 100px; object-fit: cover;">
-                        <p>
-                            Clothshop Software Desktop Application
-                        </p>
-                    </ul>
+            <h1> <span  class="name">My</span> Projects</h1>
+                <div class="Projects">
+                    <div class="Project-container">
+                        <div class="project-card">
+                            <img src="/Assests/images/Stock Management.png" 
+                                 alt="Stock Management Project">
+                                <p class="project-p">
+                                        Stock Management System(Terminal)
+                                </p> 
+                        </div>
+
+                        <div class="project-card">
+                            <img src="/Assests/images/Tic-Tac-Toe.png" 
+                                 alt="Game Project"> 
+                                <p class="project-p">
+                                    Tic-Tac-Toe Game
+                                </p> 
+                        </div>
+
+                        <div class="project-card">
+                            <img src="/Assests/images/Style ClothShop.png" 
+                                 alt="Style ClothShop Project">
+                            <p class="project-p">
+                                Clothshop Software Desktop Application
+                            </p>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="/Assests/images/portfoliolite-template.png" 
+                                 alt="portfolio Project">
+                            <p class="project-p">
+                                My Portfolio Project
+                            </p>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="/Assests/images/Recipe site image.jpg" 
+                                 alt="Recipe Project">
+                            <p class="project-p">
+                                Recipe Website Project
+                            </p>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="/Assests/images/hotel image.jpg" 
+                                 alt="Hotel Project">
+                            <p class="project-p">
+                                Hotel Website Project
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
-                <br>
-            </div>
         </section>
 
     <!-------- CONTACT --------> 
         <section id="contact" class="contact">
-            <div>            
-                <h1>Contact With Me</h1>
-                <div>
-                    <img src="/Assests/images/Hand Shake Image.jpg"
-                         alt="Shack Hand Image"
-                         style="width: 456px; height: 338.83px; object-fit: cover;">
-                    <br/>
-                    <br/>
-                    <img src="/Assests/icons/Email.png" 
-                         alt="Email Icon"
-                         style="width: 30px; height: 30px; ">
-                    <p>
-                        Email Us 
-                        <br/>
-                        <span>
-                            <a href="mailto:jkdilmisandamini@gmail.com" target="_blank">
-                                <strong><u><b>jkdilmisandamini@gmail.com</b></u></strong>
-                            </a>
-                        </span>
-                    </p>
-                    <img src="/Assests/icons/Call Me.png"
-                         alt="Call Icon"
-                         style="width: 30px; width: 30px;">
-                    <p>
-                        Call Us 
-                        <br/>
-                        <span>
-                            <strong><u>+94 77 336 7044</u></strong>
-                        </span>
-                    </p>
-                    <img src="/Assests/icons/Location.png" 
-                         alt="Location Image"
-                         style="width: 30px; height: 30px;">
-                    <p>
-                        Address 
-                    <br/>
-                    <span>
-                        <strong><u>Matara, Sri Lanka</u></strong>
-                    </span>
-                    </p>
+            <h1 id="title-contact">Contact <span class="name">Me</span></h1>
+                <div class="contact-page">
+                    <div class="contact-form-box">
+                        <div class="enter-detail-box-01">
+                            <input class="input-box" type="text" name="your name" placeholder="  Full Name">
+                            
+                            <input class="input-box" type="text" name="email" placeholder="  Enter Your Email">
+                            
+                            <input class="input-box" type="number" name="your number" placeholder="  Phone Number">
+                            
+                            <input class="input-box" type="text" name="subject" placeholder="  Subject">
+                            </div>
+                            <div class="enter-detail-box-02">
+                            <textarea name="textarea" id="textarea" placeholder="  Your Message"></textarea>
+                            <button id="sending-button" onclick="alert('Message Send Successful')">SEND  MESSAGE</button>
+                            </div>
+                        </div>    
+                    </div>
                 </div>
-                <div>
-                    <br>
-                    <form action="/submit-form">
-                        <label for="your name">YOUR NAME</label>
-                        <br>
-                        <input type="text" name="your name">
-                        <br>
-                        <label for="phone number">PHONE NUMBER</label>
-                        <br>
-                        <input type="number" name="your number">
-                        <br>
-                        <label for="email">EMAIL</label>
-                        <br>
-                        <input type="text" name="email">
-                        <br>
-                        <label for="text">SUBJECT</label>
-                        <br>
-                        <input type="text" name="subject">
-                        <br>
-                        <label for="tex">YOUR MESSAGE</label>
-                        <br>
-                        <textarea name="your message" id="your message" cols="40" rows="5" required></textarea>
-                        <br>
-                        <button onclick="alert('Message Send Successful')">SEND  MESSAGE -></button>
-                    </form>
-                    <br>
-                    <br>
-                </div>
-            </div>
         </section>
 
     <!-------- Footer --------> 
-        <footer>
-            <img src="/Assests/logos/Name Logo.jpg"
-                 alt="Name Logo"
-                 style="width: 50px; height: 20px; object-fit: cover;">
+        <footer class="footer" id="footer">
+            <div class="End-logo">
+                <h2>DS<span id="jk">JK</span>
+                </h2> 
+            </div>
 
-            <a href="https://github.com/" target="_blank"><img src="/Assests/icons/github.png" 
-                alt="Github Icon"
-                style="width: 20px; height: 20px; object-fit: cover;"></a>
+            <div class="social-icon">
+            <a href="https://github.com/" target="_blank"><img class="icon" src="/Assests/icons/github (1).png" 
+                alt="Github Icon"></a>
             
-            <a href="https://www.linkedin.com/" target="_blank"><img src="/Assests/icons/linkedin.png"
-                alt="linkedin Icon"
-                style="width: 20px; height: 20px; object-fit: cover;"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="icon" src="/Assests/icons/linkedin (1).png"
+                alt="linkedin Icon"></a>
             
-            <a href="https://www.instagram.com/" target="_blank"><img src="/Assests/icons/Instagram.png"
-                alt="Instagram Icon"
-                style="width: 20px; height: 20px; object-fit: cover;"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="icon" src="/Assests/icons/instagram (1).png"
+                alt="Instagram Icon"></a>
             
-            <a href="https://web.facebook.com" target="_blank"><img src="/Assests/icons/facebook.png"
-                alt="Facebook Icon"
-                style="width: 20px; height: 20px; object-fit: cover;"></a>     
-
-            <p>
+            <a href="https://web.facebook.com" target="_blank"><img class="icon" src="/Assests/icons/facebook (1).png"
+                alt="Facebook Icon"></a> 
+            </div>    
+            <p class="footer-end">
                 © 2025. All rights reserved.
             </p>    
         </footer>
