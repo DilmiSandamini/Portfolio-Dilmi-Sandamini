@@ -35,7 +35,7 @@
         <img id="burger" aria-hidden="true" src="/Assests/icons/burger-bar.png" alt="menu icon">
         <nav class="menu-panel" id="menu-panel-id">
           <button class="close-btn" id="btn-close">&times;</button>
-          <ul>
+          <ul class="menu-bar">
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#skills">SKILLS</a></li>
@@ -50,69 +50,67 @@
     <main>
     <!-------- HOME -------->
     <section id="home" class="home">
-        <div id="hero-content">
-            <div id="paragraph-2">
-                <p >
+        <div class="home-content-set">
+            <div id="hero-content">
+                <p id="paragraph-2">
                     Welcome to my world
                 </p>
+                 
+                <h1 id="home-title">
+                    Hi, I’m Dilmi Sandamini, 
+                    <br>
+                    a <span id="title-animation">Fullstack Developer</span>
+                </h1>
+                <div id="paragraph-1">
+                    <p>
+                        Passionate about creating intuitive and engaging user experiences.Professional development involves enhancing soft skills like time management, problem-solving, and communication.
+                    </p>
+                </div>
+                <p class="paragraph-3">Find with me</p>
+                <div id="social-media">
+                    <br>
+                    <a class="icons" href="https://github.com/" target="_blank"><img src="/Assests/icons/github (1).png" 
+                        alt="Github Icon"></a>
+                    
+                    <a class="icons" href="https://www.linkedin.com/" target="_blank"><img src="/Assests/icons/linkedin (1).png"
+                        alt="linkedin Icon"></a>
+                    
+                    <a class="icons" href="https://www.instagram.com/" target="_blank"><img src="/Assests/icons/instagram (1).png"
+                        alt="Instagram Icon"></a>
+                    
+                    <a class="icons-f" href="https://web.facebook.com" target="_blank"><img src="/Assests/icons/facebook (1).png"
+                        alt="Facebook Icon"></a>
+                </div>
             </div>
-             
-            <h1 id="home-title">
-                Hi, I’m Dilmi Sandamini, 
-                <br>
-                a <span id="title-animation">Fullstack Developer</span>
-
-            </h1>
-            <div id="paragraph-1">
-                <p>
-                    Passionate about creating intuitive and engaging user experiences.Professional development involves enhancing soft skills like time management, problem-solving, and communication.
-                </p>
-            </div>
-            
-            <p class="paragraph-3">Find with me</p>
-            
-            <div id="social-media">
-                <br>
-                <a class="icons" href="https://github.com/" target="_blank"><img src="/Assests/icons/github (1).png" 
-                    alt="Github Icon"></a>
-                
-                <a class="icons" href="https://www.linkedin.com/" target="_blank"><img src="/Assests/icons/linkedin (1).png"
-                    alt="linkedin Icon"></a>
-                
-                <a class="icons" href="https://www.instagram.com/" target="_blank"><img src="/Assests/icons/instagram (1).png"
-                    alt="Instagram Icon"></a>
-                
-                <a class="icons-f" href="https://web.facebook.com" target="_blank"><img src="/Assests/icons/facebook (1).png"
-                    alt="Facebook Icon"></a>
-            </div>
+            <img id="hero-image" src="/Assests/images/My Photo.jpg" alt="Portfolio-Dilmi Image">
         </div>
-        <img id="hero-image" src="/Assests/images/My Photo.jpg" alt="Portfolio-Dilmi Image">
+        
     </section>    
 
     <!-------- ABOUT --------> 
 
         <section id="about" class="about">
+            <h1 id="title-about">About<span class="name">Me</span></h1>
+            <div class="about-full-details">
                 <div class="about-image">
                     <img src="/Assests/images/My Photo.jpg" alt="Portfolio-Dilmi Image"> 
                 </div>
-                    <div class="about-content">
-                        <h1 id="title-about">About<span class="name">Me</span></h1>
-                        <p>
-                            Hey,I am Dilmi Sandamini and I'm 22 years old.I am currently studying to become an IT Professional in Software Engineering Institute. I hope to work as a fullstack developer in the near future. I am currently studying web developing, mobile developing and I am interested in coding, music,traveling fitness and photography. 
-                        </p>
-                        <br>
-                    <div class="education">
-                        <p>Education & Certification</p>
-                        <hr class="line">
-                        <br>
-                        <p>Completed Ordinary Level(OL) & Advanced 
-                        Level (AL) Examination in Maths scheme - MR/ Narandeniya National School 
-                        </p>
-                        <br>
-                        <p>Studying Graduate Diploma in Software Engineering(GDSE) - Institute Of Software Engineering (IJSE)</p>
-                        
-                    </div>
+                <div class="about-content">
+                    <p>
+                        Hey,I am Dilmi Sandamini and I'm 22 years old.I am currently studying to become an IT Professional in Software Engineering Institute. I hope to work as a fullstack developer in the near future. I am currently studying web developing, mobile developing and I am interested in coding, music,traveling fitness and photography. 
+                    </p>
+                    <br>
+                <div class="education">
+                    <p>Education & Certification</p>
+                    <hr class="line">
+                    <br>
+                    <p>Completed Ordinary Level(OL) & Advanced 
+                    Level (AL) Examination in Maths scheme - MR/ Narandeniya National School 
+                    </p>
+                    <br>
+                    <p>Studying Graduate Diploma in Software Engineering(GDSE) - Institute Of Software Engineering (IJSE)</p>
                 </div>
+            </div>
         </section>
 
     <!-------- skills --------> 
@@ -158,9 +156,6 @@
     <!-------- SERVICE --------> 
         <section id="service" class="service">
             <h1 id="title-name">What I <span class="name"> Do ...</span></h1>
-                    <p id="title-detail">
-                    The Service in the Portfolio is the core repository for all information. Each service is listed along with its current status and history. 
-                    </p>
                 <div class="services">
                     <div class="service-container">
                         <div class="service-card">
@@ -170,7 +165,7 @@
                             <h4 class="service-card-title">Mobile Application</h4>
                         </div>
                         <p class="service-card-details">
-                            Mobile app development involves designing, coding, and deploying software for mobile devices. It focuses on creating user-friendly, reliable solutions tailored to meet specific audience needs.
+                            Mobile app development involves designing, coding, and deploying software for mobile devices. It focuses on creating user-friendly, reliable solutions tailored to meet specific audience needs.
                         </p> 
                         </div>
 
@@ -192,7 +187,7 @@
                             <h4 class="service-card-title">Stand Alone Application</h4>
                         </div>
                         <p class="service-card-details">
-                            Stand-alone application development focuses on creating independent software that runs without needing a network connection. The goal is to deliver reliable, efficient, and user-friendly solutions tailored to specific tasks.  
+                            Stand-alone application development focuses on creating independent software that runs without needing a network connection. The goal is to deliver reliable, efficient, and user-friendly solutions tailored to specific tasks.  
                         </p>
                         </div>
                     </div>
@@ -256,27 +251,22 @@
                 </div>
         </section>
 
-    <!-------- CONTACT --------> 
+    <!-- ------ CONTACT --------> 
         <section id="contact" class="contact">
             <h1 id="title-contact">Contact <span class="name">Me</span></h1>
-                <div class="contact-page">
-                    <div class="contact-form-box">
-                        <div class="enter-detail-box-01">
-                            <input class="input-box" type="text" name="your name" placeholder="  Full Name">
-                            
-                            <input class="input-box" type="text" name="email" placeholder="  Enter Your Email">
-                            
-                            <input class="input-box" type="number" name="your number" placeholder="  Phone Number">
-                            
-                            <input class="input-box" type="text" name="subject" placeholder="  Subject">
-                            </div>
-                            <div class="enter-detail-box-02">
-                            <textarea name="textarea" id="textarea" placeholder="  Your Message"></textarea>
-                            <button id="sending-button" onclick="alert('Message Send Successful')">SEND  MESSAGE</button>
-                            </div>
-                        </div>    
+            <form action="/submit-form">
+                <div class="contact-form">
+                    <div class="contact-left-side" id="mobile-sensitive-contact-inputs">
+                        <input class="input-box" type="text" placeholder="Ente your full name">
+                        <input class="input-box"  type="email" placeholder="Your Email">
+                        <input class="input-box"  type="text" placeholder="Your phone number">
+                    </div>
+                    <div class="contact-left-side" id="mobile-sensitive-contact-text-button">
+                        <textarea name="textarea" id="textarea" placeholder="Write your massage"></textarea>
+                        <button id="sending-button">Submit</button>
                     </div>
                 </div>
+            </form>
         </section>
 
     <!-------- Footer --------> 
@@ -300,7 +290,7 @@
                 alt="Facebook Icon"></a> 
             </div>    
             <p class="footer-end">
-                © 2025. All rights reserved.
+            © 2025. All rights reserved.
             </p>    
         </footer>
     </main>

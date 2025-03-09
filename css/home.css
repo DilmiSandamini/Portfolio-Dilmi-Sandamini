@@ -1,15 +1,22 @@
-#home{
+.home{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color:  #151418;
     padding-top: 100px;
     padding-bottom: 200px;
 }
 
+.home-content-set{
+    width: 1380px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #hero-content{
     color: white;
+    width: 500px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 36%;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -18,15 +25,11 @@
 }
 
 #hero-image{
-    z-index: 0;
     width: 300px;
     height: 450px;
     object-fit: cover;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
-    margin-top: 130px;
-    margin-left:-450px;
-
     transition: 0.5s ease;
 }
 
@@ -38,17 +41,14 @@
 }
 
 #paragraph-1{
-    height:100px ;
     font-size:1rem ;
-    padding-top: 0;
-    padding-bottom: 0;
-    text-align: justify;
 }
 .name{
     color:#FF122A ;
 }
 
 #home-title{
+    width: 600px;
     font-size: 3rem;
 }
 
@@ -87,38 +87,143 @@
 }
 
 #paragraph-2{
-    margin-bottom: -45px;
+    /* margin-bottom: -45px; */
 }
 
 #title-animation{
     color: #FF122A;
 }
 
-@media screen and (min-width: 1024px) and
- (max-width: 1440px){
-    #home{
+@media screen and (min-width: 1024px) and (max-width: 1440px){
+    .home-content-set{
+        width: 900px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
     }
-    #hero-content{
-        margin-left: -130px;
-        margin-top: 60px;
-        width: 50%;
-    }
-
     #hero-image{
-        width: 250px;
-        height: 400px;
-        margin-left: -400px;
-        margin-top: 90px;
+        width: 260px;
+        height: 420px;
+        object-fit: cover;
     }
 
     #home-title{
+        width: 600px;
+        font-size: 2.6rem;
+    }
+}  
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .home-content-set{
+        width: 600px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-content{
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        padding: 24px;
+    }
+    #hero-image{
+        margin-top: 30px;
+        width: 260px;
+        height: 420px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+    .home-content-set{
+        width: 390px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #home-title{
+        width: 400px;
         font-size: 2rem;
+    }
+    #hero-content{
+        width: 360px;
+    }
+
+    #hero-image{
+        margin-top: 30px;
+        width: 240px;
+        height: 380px;
+        object-fit: cover;
     }
 
     #paragraph-1{
-        width:450px ;
-        height:100px ;
+        font-size:0.8rem ;
     }
-}  
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    .home-content-set{
+        width: 350px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #home-title{
+        width: 300px;
+        font-size: 2rem;
+    }
+    #hero-content{
+        width: 300px;
+    }
+    #hero-image{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    #paragraph-1{
+        font-size:0.6rem ;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .home-content-set{
+        width: 90vw;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #home-title{
+        width: 90vw;
+        font-size: 1.8rem;
+    }
+    #hero-content{
+        width: 90vw;
+    }
+    #hero-image{
+        width: 80vw;
+        height: 110vw;
+        object-fit: cover;
+    }
+
+    #paragraph-1{
+        font-size:0.7rem ;
+    }
+
+    .icons{
+        width: 20px;
+        height: 20px; 
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 319px){
+
+}

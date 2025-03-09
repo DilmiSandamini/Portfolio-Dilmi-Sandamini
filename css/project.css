@@ -1,7 +1,7 @@
 .project{
     padding-top: 30px;
     background-color:#151418;
-    padding-bottom: 250px;
+    padding-bottom: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     display: flex;
@@ -47,8 +47,11 @@
     transform: scale(1.1); 
 }
 
-@media screen and (min-width: 1024px) and
- (max-width: 1440px){
+.project-p{
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px){
 
     .Project-container{
         column-gap: 85px;
@@ -70,4 +73,90 @@
         text-align: center;
     }
 
- }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .Project-container{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Projects{
+        display: flex;
+        justify-content: center;
+    }
+    .project-card img{
+        width: 70%;
+    }
+
+    .project-p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px){
+    .Project-container{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Projects{
+        display: flex;
+        justify-content: center;
+    }
+    .project-card img{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px){
+    .Project-container{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Projects{
+        display: flex;
+        justify-content: center;
+    }
+    .project-card img{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .Project-container{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Projects{
+        display: flex;
+        justify-content: center;
+    }
+    .project-card img{
+        width: 80%;
+    }
+
+    .project-card{
+        width: 210px;
+        height: 230px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 319px){
+    .Project-container{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .Projects{
+        display: flex;
+        justify-content: center;
+    }
+    .project-card img{
+        width: 90%;
+    }
+}
